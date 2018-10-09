@@ -1,0 +1,13 @@
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\bin\Debug\netstandard2.0\TareasDemo.deps.json
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\bin\Debug\netstandard2.0\TareasDemo.dll
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\bin\Debug\netstandard2.0\TareasDemo.pdb
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\Views\ListaDeTareasPage.xaml.g.cs
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\Views\NuevaTareaPage.xaml.g.cs
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\TareasDemo.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\TareasDemo.AssemblyInfoInputs.cache
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\TareasDemo.AssemblyInfo.cs
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\TareasDemo.dll
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\TareasDemo.pdb
+C:\Users\Pedro\source\repos\TareasDemo\TareasDemo\TareasDemo\obj\Debug\netstandard2.0\TareasDemo.csprojAssemblyReference.cache

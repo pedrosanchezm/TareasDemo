@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TareasDemo.ViewModels"
+             Title="Tareas"
+             x:Class="TareasDemo.Views.ListaDeTareasPage">
+
+    <!-- Propiedad BindingContext de la vista-->
+    <ContentPage.BindingContext>
+        <vm:ListaDeTareasVM/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="+"
+            Command="{Binding AgregarTareaCommand}" Icon="plus.png" Order="Primary" Priority="0" >
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <!--Lista de Tareas.-->
+
+    <ScrollView>
+        <StackLayout>
+            <ListView
+                x:Name="listViewTareas"
+                ItemsSource="{Binding tareas}"
+                SelectedItem="{Binding tareaSeleccionada}"
+                Margin="20">
+
+                <ListView.Header>
+                    <Button Text="Ver Detalle"
+                    Command="{Binding MostrarDetallesCommand}"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="0,0,0,0" 
+                                 Orientation="Horizontal"
+                                 HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Nombre}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand"/>
+                                <Image Source="check.png" 
+                                HorizontalOptions="End" 
+                                IsVisible="{Binding Finalizada}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+

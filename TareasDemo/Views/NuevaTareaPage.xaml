@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TareasDemo.ViewModels"
+             x:Class="TareasDemo.Views.NuevaTareaPage">
+    <ContentPage.BindingContext>
+        <vm:NuevaTareaVM/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <!--  Label Nombre -->
+            <Label
+                Text="Nombre:"/>
+            <Entry
+                Text="{Binding Name}"
+                Placeholder="Ingrese un nombre"
+                x:Name="EntryNombre"/>
+            <Label Text="Finalizada"/>
+            <Switch IsToggled="{Binding Completed}"/>
+            <!--  Label Notas -->
+            <Label
+                Text="Descripción"/>
+            <!-- Entry Description-->
+            <Entry
+                Text="{Binding Notes}"
+                x:Name="EntryDescription"
+                Placeholder="Description"/>
+
+            <!-- Botones -->
+            <Button
+                x:Name="ButtonGuardarItem"
+                Text="Guardar"
+                Command="{Binding SaveCommand}"/>
+
+            <Button x:Name="ButtonEliminar"
+                    Text="Eliminar"
+                    Command="{Binding DeleteCommand}"/>
+
+            <Button
+                Text="Actualizar"
+                x:Name="ButtonActualizar"
+                Command="{Binding UpdateCommand}"/>
+
+            <Button
+                x:Name="ButtonCancelar"
+                Text="Cancelar"
+                Command="{Binding CancelCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
